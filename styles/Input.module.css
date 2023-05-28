@@ -1,0 +1,15 @@
+.contactInput {
+    width: 150px;
+    padding: 8px;
+    margin: 0 0 8px 0;
+    border-radius: 5px;
+    outline: none;
+    border: #dbdbdb 1px solid;
+    font-size: 14px;
+    height: 35px;
+    text-align: right;
+}
+
+.contactInput::placeholder {
+    color: #a3a3a3;
+}

@@ -1,0 +1,50 @@
+.mainContent {
+    width: 100%;
+    height: 100%;
+    padding: 200px 2px 0 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainContent::-webkit-scrollbar {
+    background: #f1f1f1;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 23px;
+}
+
+.mainContent::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 23px;
+}
+
+.mainContent::before {
+    content: '';
+    position: fixed;
+    filter: drop-shadow(0px 3px 10px rgba(0, 0, 0, .4));
+    left: 0;
+    top: 0;
+    background: url('/wave.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    transform: rotate(180deg);
+    animation: forwards up-appearance .5s;
+}
+
+
+@media (max-width: 1400px) {
+    .mainContent {
+        flex-direction: column;
+    }
+}
+
+@keyframes up-appearance {
+    from {
+        top: -300px;
+    }
+
+    to {
+        top: 0;
+    }
+}

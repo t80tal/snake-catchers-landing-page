@@ -1,0 +1,48 @@
+.header {
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: #fff;
+    width: 100%;
+}
+
+.wave {
+    z-index: -1;
+    /* box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 23px; */
+    transform: rotate(180deg);
+    position: absolute;
+    top: 50px;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    background: url('/wave.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    animation: forwards up-appearance .5s;
+}
+
+@media (max-width: 1400px) {
+    .wave {
+        top: 50px;
+        height: 300px;
+    }
+}
+
+@keyframes up-appearance {
+    from {
+        background-position-y: 400px;
+    }
+
+    to {
+        background-position: bottom;
+    }
+}

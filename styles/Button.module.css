@@ -1,0 +1,33 @@
+.gradientButton {
+    z-index: 999;
+    cursor: pointer;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    padding: 8px 18px;
+    background: linear-gradient(to left, #0da68a 50%, #fff 50%) right;
+    background-size: 300%;
+    transition: .3s ease-out;
+    display: flex;
+    word-wrap: break-word;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 7px 23px;
+}
+
+.gradientButton:hover {
+    box-shadow: inset 0px 0px 0px 1px #0da68a;
+    background-color: #fff;
+    color: #0da68a;
+    background-position: left;
+}
+
+@media (max-width: 680px) {
+    .gradientButton {
+        font-size: 17px;
+        padding: 4px 8px;
+    }
+}

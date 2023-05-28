@@ -1,0 +1,13 @@
+.footer {
+    /* position: absolute; */
+    /* bottom: 0;    */
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 200px;
+    background-color: #262626;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 7px 23px;
+    /* width: 100vw; */
+}
